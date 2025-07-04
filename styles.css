@@ -1,0 +1,141 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #fafafa;
+  max-width: 900px;
+  margin: 20px auto;
+  color: #222;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: #2a9d8f;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2a9d8f;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  background: white;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(42, 157, 143, 0.15);
+}
+
+h2 {
+  margin-bottom: 20px;
+  border-bottom: 3px solid #2a9d8f;
+  padding-bottom: 8px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.project {
+  background: #d4f1f4;
+  padding: 15px;
+  border-radius: 6px;
+  flex: 1 1 260px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project:hover {
+  background-color: #a6e3e9;
+}
+
+.hidden {
+  display: none;
+}
+
+#project-details {
+  background: #a6e3e9;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 20px;
+  position: relative;
+}
+
+#project-details button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 15px;
+  background: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+form button:hover {
+  background: #21786b;
+}
+
+#form-message {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+}

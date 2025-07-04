@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>ANUSHKA KAKADE</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm Anushka, a front-end developer passionate about creating beautiful and user-friendly websites.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project" data-id="proj1">
+        <h3>Blog Website</h3>
+        <p>A clean and responsive blog platform.</p>
+      </div>
+      <div class="project" data-id="proj2">
+        <h3>Recipe App</h3>
+        <p>Search and save your favorite recipes.</p>
+      </div>
+      <div class="project" data-id="proj3">
+        <h3>Chat App</h3>
+        <p>Real-time chat application with multiple rooms.</p>
+      </div>
+    </div>
+    <div id="project-details" class="hidden">
+      <button id="close-btn">Close</button>
+      <h3 id="project-title"></h3>
+      <p id="project-desc"></p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input id="name" type="text" required />
+
+      <label for="email">Email:</label>
+      <input id="email" type="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+    <p id="form-message"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
